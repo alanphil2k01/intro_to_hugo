@@ -1,0 +1,116 @@
+<!doctype html><html lang=en><meta charset=utf-8><meta name=generator content="Hugo 0.101.0"><meta name=viewport content="width=device-width,initial-scale=1,viewport-fit=cover"><meta name=color-scheme content="light dark"><meta name=supported-color-schemes content="light dark"><title>03 Create Hugo Site&nbsp;&ndash;&nbsp;Introduction to Hugo</title><link rel=stylesheet href=https://alanphil2k01.github.io/intro_to_hugo/css/core.min.88183d3431fdd7294b190123c929f283c9af7a3c48de0c127fbaba4e1cc3ddacdc6a7c44f3e7d48dbd9ad086be405c20.css integrity=sha384-iBg9NDH91ylLGQEjySnyg8mvejxI3gwSf7q6ThzD3azcanxE8+fUjb2a0Ia+QFwg><meta name=twitter:card content="summary"><meta name=twitter:title content="03 Create Hugo Site"><body><section id=header><div class="header wrap"><span class="header left-side"><a class="site home" href=https://alanphil2k01.github.io/intro_to_hugo/><span class="site name">Introduction to Hugo</span></a></span>
+<span class="header right-side"><div class="nav wrap"><nav class=nav><a class="nav item" href=https://alanphil2k01.github.io/intro_to_hugo/about>About</a><a class="nav item" href=https://gohugo%2eio/ target=_blank rel="noopener noreferrer">Hugo</a></nav></div></span></div></section><section id=content><div class=article-container><section class="article header"><h1 class="article title">03 Create Hugo Site</h1></section><article class="article markdown-body"><h1 id=creating-the-project>Creating the project</h1><pre tabindex=0><code>hugo new site &lt;HUGO_PROJECT&gt;
+cd &lt;HUGO_PROJECT&gt;
+git init
+</code></pre><h1 id=adding-a-theme>Adding a theme</h1><p>Select a theme from <a href=https://themes.gohugo.io/ target=_blank rel="noopener noreferrer">hugo&rsquo;s theme page</a>
+.</p><pre tabindex=0><code>git submodule add &lt;THEME_URL&gt; themes/&lt;THEME_NAME&gt;
+</code></pre><p>Example using <a href=https://themes.gohugo.io/themes/hugo-notepadium/ target=_blank rel="noopener noreferrer">Notepadium</a>
+theme</p><pre tabindex=0><code>git submodule add https://github.com/cntrump/hugo-notepadium.git themes/hugo-notepadium
+</code></pre><p>Add entry the following entry to config.toml</p><pre tabindex=0><code>theme = &#34;&lt;THEME_NAME&gt;&#34;
+</code></pre><p>Most themes will provide instructions on how to setup config.toml to use various components of the theme.
+For <a href=https://themes.gohugo.io/themes/hugo-notepadium/ target=_blank rel="noopener noreferrer">Notepadium</a>
+replace the contents of config.toml with
+the default values given in the description of the theme.</p><pre tabindex=0><code>baseURL = &#34;https://example.com&#34;
+title = &#34;Notepadium&#34;
+theme = &#34;hugo-notepadium&#34;
+copyright = &#34;©2019 Notepadium.&#34;
+
+languageCode = &#34;zh-cn&#34;
+hasCJKLanguage = true
+
+enableRobotsTXT = true
+
+# Enable Disqus
+#disqusShortname = &#34;XXX&#34;
+
+# Google Analytics
+#googleAnalytics = &#34;UA-123-45&#34;
+
+[markup.highlight]
+codeFences = true
+noClasses = false
+
+[markup.goldmark.renderer]
+unsafe = true  # enable raw HTML in Markdown
+
+[params]
+style = &#34;auto&#34;  # default: auto. light: light theme, dark: dark theme, auto: based on system.
+dateFormat = &#34;Monday, January 2, 2006&#34;  # if unset, default is &#34;2006-01-02&#34;
+logo = &#34;&#34;  # if you have a logo png
+slogan = &#34;100% JavaScript-free&#34;
+license = &#34;&#34;  # CC License
+fullRss = false # Puts entire HTML post into rss &#39;description&#39; tag. If unset, default is false.
+
+[params.comments]
+enable = false  # En/Disable comments globally, default: false. You can always enable comments on per page.
+
+[params.math]
+enable = false  # optional: true, false. Enable globally, default: false. You can always enable math on per page.
+use = &#34;katex&#34;  # option: &#34;katex&#34;, &#34;mathjax&#34;. default: &#34;katex&#34;
+
+[params.syntax]
+use = &#34;none&#34;  # builtin: &#34;prismjs&#34;, &#34;hljs&#34;. &#34;none&#34; means Chroma
+theme = &#34;xcode&#34;
+darkTheme = &#34;xcode-dark&#34;  # apply this theme in dark mode
+
+[params.share]
+enable = false
+addThisId = &#34;&#34;
+inlineToolId = &#34;&#34;
+
+[params.nav]
+showCategories = true       # /categories/
+showTags = true             # /tags/
+
+# custom navigation items
+
+[[params.nav.custom]]
+title = &#34;About&#34;
+url = &#34;/about&#34;
+
+[[params.nav.custom]]
+title = &#34;Hugo&#34;
+url = &#34;https://gohugo.io/&#34;
+
+# for chinese
+[params.beian]
+  icp = &#34;&#34;
+  gongan = &#34;&#34;
+</code></pre><h1 id=add-a-new-post>Add a new post</h1><p>Create a new post and add some content.</p><pre tabindex=0><code>hugo new posts/&lt;FILENAME&gt;.md
+</code></pre><p>The file will be located in content/posts/<filename>.md</p><h1 id=run-the-site-locally>Run the site locally</h1><pre tabindex=0><code>hugo server -D
+</code></pre><p><strong>Note</strong> &lsquo;-D&rsquo; flag is used to force the rendering of draft posts. Remove or make draft = false for each header of post before deploying it.</p><h1 id=deploy>Deploy</h1><p><a href=https://gohugo.io/documentation/ target=_blank rel="noopener noreferrer">Hugo docs</a>
+have extensive instruction for deployment to various platforms.</p><h4 id=deploying-to-github>Deploying to github</h4><ol><li>Create a new repository</li><li>Create a file .github/workflows/gh-pages.yml with content</li></ol><pre tabindex=0><code>name: github pages
+
+on:
+  push:
+    branches:
+      - main  # Set a branch to deploy
+  pull_request:
+
+jobs:
+  deploy:
+    runs-on: ubuntu-20.04
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          submodules: true  # Fetch Hugo themes (true OR recursive)
+          fetch-depth: 0    # Fetch all history for .GitInfo and .Lastmod
+
+      - name: Setup Hugo
+        uses: peaceiris/actions-hugo@v2
+        with:
+          hugo-version: &#39;latest&#39;
+          # extended: true
+
+      - name: Build
+        run: hugo --minify
+
+      - name: Deploy
+        uses: peaceiris/actions-gh-pages@v3
+        if: github.ref == &#39;refs/heads/main&#39;
+        with:
+          github_token: ${{ secrets.GITHUB_TOKEN }}
+          publish_dir: ./public
+</code></pre><ol start=3><li>Add/Edit the following entries in config.toml</li></ol><pre tabindex=0><code>baseURL = &#39;https://&lt;GITHUB_USERNAME&gt;.github.io/&lt;GITHUB_REPO_NAME&gt;/&#39;
+canonifyURLs = true
+</code></pre><ol start=4><li>Commit changes and push to the repository</li></ol><p><a href=https://alanphil2k01.github.io/intro_to_hugo/posts/02_setup>Prev</a></p></article></div><div class="article bottom"><section class="article navigation"><p><a class=link href=https://alanphil2k01.github.io/intro_to_hugo/posts/02_setup/><span class="iconfont icon-article"></span>02 Setup</a></p></section></div></section><section id=footer><div class=footer-wrap><p class=copyright>©2019 Notepadium.</p><p class=powerby><span>Powered&nbsp;by&nbsp;</span><a href=https://gohugo.io target=_blank rel="noopener noreferrer">Hugo</a><span>&nbsp;&&nbsp;</span><a href=https://themes.gohugo.io/hugo-notepadium/ target=_blank rel="noopener noreferrer">Notepadium</a></p></div></section><script src=https://alanphil2k01.github.io/intro_to_hugo/js/prism.min.7e922daf09e7c7676c80368b28779479ebf7b2cee9762f34de4361bda5c03028f6639ff3523eda4fa5c94fb2a3ac6453.js integrity=sha384-fpItrwnnx2dsgDaLKHeUeev3ss7pdi803kNhvaXAMCj2Y5/zUj7aT6XJT7KjrGRT></script></body></html>

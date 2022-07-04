@@ -1,0 +1,169 @@
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Extras on Introduction to Hugo</title><link>https://alanphil2k01.github.io/intro_to_hugo/extras/</link><description>Recent content in Extras on Introduction to Hugo</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>©2019 Notepadium.</copyright><atom:link href="https://alanphil2k01.github.io/intro_to_hugo/extras/index.xml" rel="self" type="application/rss+xml"/><item><title>01 Hugo</title><link>https://alanphil2k01.github.io/intro_to_hugo/posts/01_what_is_hugo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://alanphil2k01.github.io/intro_to_hugo/posts/01_what_is_hugo/</guid><description>&lt;h1 id="hugo">Hugo&lt;/h1>
+&lt;p>&lt;a href="https://gohugo.io/"target="_blank" rel="noopener noreferrer">Hugo&lt;/a>
+is a static site generator written in Go and claims to be fastest framework in the world.&lt;/p>
+&lt;h3 id="features-of-hugo">Features of Hugo&lt;/h3>
+&lt;ul>
+&lt;li>It&amp;rsquo;s fast&lt;/li>
+&lt;li>Markdown (and other formats) to static HTML&lt;/li>
+&lt;li>&lt;a href="https://themes.gohugo.io/"target="_blank" rel="noopener noreferrer">Themes&lt;/a>
+&lt;/li>
+&lt;li>Multilanguage support&lt;/li>
+&lt;li>Builtin server for local development&lt;/li>
+&lt;li>Easy to deploy&lt;/li>
+&lt;li>Great &lt;a href="https://gohugo.io/documentation/"target="_blank" rel="noopener noreferrer">documentation&lt;/a>
+&lt;/li>
+&lt;li>&lt;a href="https://alanphil2k01.github.io/intro_to_hugo/extras/shortcodes">Shortcodes&lt;/a>
+&lt;/li>
+&lt;/ul>
+&lt;p>&lt;a href="https://alanphil2k01.github.io/intro_to_hugo/posts/02_setup">Next&lt;/a>
+&lt;/p></description></item><item><title>02 Setup</title><link>https://alanphil2k01.github.io/intro_to_hugo/posts/02_setup/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://alanphil2k01.github.io/intro_to_hugo/posts/02_setup/</guid><description>&lt;h1 id="installation">Installation&lt;/h1>
+&lt;p>Hugo&amp;rsquo;s Installation guide can be found &lt;a href="https://gohugo.io/getting-started/installing/"target="_blank" rel="noopener noreferrer">here&lt;/a>
+.
+Commands for installing hugo for major operating systems are mentioned below.&lt;/p>
+&lt;h3 id="linux">Linux&lt;/h3>
+&lt;h4 id="snap">Snap&lt;/h4>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">snap install hugo
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="ubuntu-and-debian">Ubuntu and debian&lt;/h4>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">snap install hugo
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="arch">Arch&lt;/h4>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">sudo pacman -Syu hugo
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h4 id="fedora-rhel-or-centos">Fedora, RHEL or CentOS&lt;/h4>
+&lt;div class="highlight">&lt;pre tabindex="0" class="chroma">&lt;code class="language-sh" data-lang="sh">&lt;span class="line">&lt;span class="cl">sudo dnf install hugo
+&lt;/span>&lt;/span>&lt;/code>&lt;/pre>&lt;/div>&lt;h3 id="windows">Windows&lt;/h3>
+&lt;h4 id="with-chocolateychocolateyorg">With &lt;a href="chocolatey.org">Chocolatey&lt;/a>
+&lt;/h4>
+&lt;pre tabindex="0">&lt;code>choco install hugo
+&lt;/code>&lt;/pre>&lt;h4 id="or-install-binary-from-herehttpsgithubcomgohugoiohugoreleases">or install binary from &lt;a href="https://github.com/gohugoio/hugo/releases"target="_blank" rel="noopener noreferrer">here&lt;/a>
+&lt;/h4>
+&lt;h3 id="macos">MacOS&lt;/h3>
+&lt;h4 id="with-homebrewhttpsbrewsh">With [homebrew)[https://brew.sh/]&lt;/h4>
+&lt;pre tabindex="0">&lt;code>brew install hugo
+&lt;/code>&lt;/pre>&lt;p>&lt;a href="https://alanphil2k01.github.io/intro_to_hugo/posts/01_what_is_hugo">Prev&lt;/a>
+| &lt;a href="https://alanphil2k01.github.io/intro_to_hugo/posts/03_new_project">Next&lt;/a>
+&lt;/p></description></item><item><title>03 Create Hugo Site</title><link>https://alanphil2k01.github.io/intro_to_hugo/posts/03_new_project/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://alanphil2k01.github.io/intro_to_hugo/posts/03_new_project/</guid><description>&lt;h1 id="creating-the-project">Creating the project&lt;/h1>
+&lt;pre tabindex="0">&lt;code>hugo new site &amp;lt;HUGO_PROJECT&amp;gt;
+cd &amp;lt;HUGO_PROJECT&amp;gt;
+git init
+&lt;/code>&lt;/pre>&lt;h1 id="adding-a-theme">Adding a theme&lt;/h1>
+&lt;p>Select a theme from &lt;a href="https://themes.gohugo.io/"target="_blank" rel="noopener noreferrer">hugo&amp;rsquo;s theme page&lt;/a>
+.&lt;/p>
+&lt;pre tabindex="0">&lt;code>git submodule add &amp;lt;THEME_URL&amp;gt; themes/&amp;lt;THEME_NAME&amp;gt;
+&lt;/code>&lt;/pre>&lt;p>Example using &lt;a href="https://themes.gohugo.io/themes/hugo-notepadium/"target="_blank" rel="noopener noreferrer">Notepadium&lt;/a>
+theme&lt;/p>
+&lt;pre tabindex="0">&lt;code>git submodule add https://github.com/cntrump/hugo-notepadium.git themes/hugo-notepadium
+&lt;/code>&lt;/pre>&lt;p>Add entry the following entry to config.toml&lt;/p>
+&lt;pre tabindex="0">&lt;code>theme = &amp;#34;&amp;lt;THEME_NAME&amp;gt;&amp;#34;
+&lt;/code>&lt;/pre>&lt;p>Most themes will provide instructions on how to setup config.toml to use various components of the theme.
+For &lt;a href="https://themes.gohugo.io/themes/hugo-notepadium/"target="_blank" rel="noopener noreferrer">Notepadium&lt;/a>
+replace the contents of config.toml with
+the default values given in the description of the theme.&lt;/p>
+&lt;pre tabindex="0">&lt;code>baseURL = &amp;#34;https://example.com&amp;#34;
+title = &amp;#34;Notepadium&amp;#34;
+theme = &amp;#34;hugo-notepadium&amp;#34;
+copyright = &amp;#34;©2019 Notepadium.&amp;#34;
+languageCode = &amp;#34;zh-cn&amp;#34;
+hasCJKLanguage = true
+enableRobotsTXT = true
+# Enable Disqus
+#disqusShortname = &amp;#34;XXX&amp;#34;
+# Google Analytics
+#googleAnalytics = &amp;#34;UA-123-45&amp;#34;
+[markup.highlight]
+codeFences = true
+noClasses = false
+[markup.goldmark.renderer]
+unsafe = true # enable raw HTML in Markdown
+[params]
+style = &amp;#34;auto&amp;#34; # default: auto. light: light theme, dark: dark theme, auto: based on system.
+dateFormat = &amp;#34;Monday, January 2, 2006&amp;#34; # if unset, default is &amp;#34;2006-01-02&amp;#34;
+logo = &amp;#34;&amp;#34; # if you have a logo png
+slogan = &amp;#34;100% JavaScript-free&amp;#34;
+license = &amp;#34;&amp;#34; # CC License
+fullRss = false # Puts entire HTML post into rss &amp;#39;description&amp;#39; tag. If unset, default is false.
+[params.comments]
+enable = false # En/Disable comments globally, default: false. You can always enable comments on per page.
+[params.math]
+enable = false # optional: true, false. Enable globally, default: false. You can always enable math on per page.
+use = &amp;#34;katex&amp;#34; # option: &amp;#34;katex&amp;#34;, &amp;#34;mathjax&amp;#34;. default: &amp;#34;katex&amp;#34;
+[params.syntax]
+use = &amp;#34;none&amp;#34; # builtin: &amp;#34;prismjs&amp;#34;, &amp;#34;hljs&amp;#34;. &amp;#34;none&amp;#34; means Chroma
+theme = &amp;#34;xcode&amp;#34;
+darkTheme = &amp;#34;xcode-dark&amp;#34; # apply this theme in dark mode
+[params.share]
+enable = false
+addThisId = &amp;#34;&amp;#34;
+inlineToolId = &amp;#34;&amp;#34;
+[params.nav]
+showCategories = true # /categories/
+showTags = true # /tags/
+# custom navigation items
+[[params.nav.custom]]
+title = &amp;#34;About&amp;#34;
+url = &amp;#34;/about&amp;#34;
+[[params.nav.custom]]
+title = &amp;#34;Hugo&amp;#34;
+url = &amp;#34;https://gohugo.io/&amp;#34;
+# for chinese
+[params.beian]
+icp = &amp;#34;&amp;#34;
+gongan = &amp;#34;&amp;#34;
+&lt;/code>&lt;/pre>&lt;h1 id="add-a-new-post">Add a new post&lt;/h1>
+&lt;p>Create a new post and add some content.&lt;/p>
+&lt;pre tabindex="0">&lt;code>hugo new posts/&amp;lt;FILENAME&amp;gt;.md
+&lt;/code>&lt;/pre>&lt;p>The file will be located in content/posts/&lt;FILENAME>.md&lt;/p>
+&lt;h1 id="run-the-site-locally">Run the site locally&lt;/h1>
+&lt;pre tabindex="0">&lt;code>hugo server -D
+&lt;/code>&lt;/pre>&lt;p>&lt;strong>Note&lt;/strong> &amp;lsquo;-D&amp;rsquo; flag is used to force the rendering of draft posts. Remove or make draft = false for each header of post before deploying it.&lt;/p>
+&lt;h1 id="deploy">Deploy&lt;/h1>
+&lt;p>&lt;a href="https://gohugo.io/documentation/"target="_blank" rel="noopener noreferrer">Hugo docs&lt;/a>
+have extensive instruction for deployment to various platforms.&lt;/p>
+&lt;h4 id="deploying-to-github">Deploying to github&lt;/h4>
+&lt;ol>
+&lt;li>Create a new repository&lt;/li>
+&lt;li>Create a file .github/workflows/gh-pages.yml with content&lt;/li>
+&lt;/ol>
+&lt;pre tabindex="0">&lt;code>name: github pages
+on:
+push:
+branches:
+- main # Set a branch to deploy
+pull_request:
+jobs:
+deploy:
+runs-on: ubuntu-20.04
+steps:
+- uses: actions/checkout@v2
+with:
+submodules: true # Fetch Hugo themes (true OR recursive)
+fetch-depth: 0 # Fetch all history for .GitInfo and .Lastmod
+- name: Setup Hugo
+uses: peaceiris/actions-hugo@v2
+with:
+hugo-version: &amp;#39;latest&amp;#39;
+# extended: true
+- name: Build
+run: hugo --minify
+- name: Deploy
+uses: peaceiris/actions-gh-pages@v3
+if: github.ref == &amp;#39;refs/heads/main&amp;#39;
+with:
+github_token: ${{ secrets.GITHUB_TOKEN }}
+publish_dir: ./public
+&lt;/code>&lt;/pre>&lt;ol start="3">
+&lt;li>Add/Edit the following entries in config.toml&lt;/li>
+&lt;/ol>
+&lt;pre tabindex="0">&lt;code>baseURL = &amp;#39;https://&amp;lt;GITHUB_USERNAME&amp;gt;.github.io/&amp;lt;GITHUB_REPO_NAME&amp;gt;/&amp;#39;
+canonifyURLs = true
+&lt;/code>&lt;/pre>&lt;ol start="4">
+&lt;li>Commit changes and push to the repository&lt;/li>
+&lt;/ol>
+&lt;p>&lt;a href="https://alanphil2k01.github.io/intro_to_hugo/posts/02_setup">Prev&lt;/a>
+&lt;/p></description></item><item><title>Shortcodes</title><link>https://alanphil2k01.github.io/intro_to_hugo/extras/shortcodes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://alanphil2k01.github.io/intro_to_hugo/extras/shortcodes/</guid><description>&lt;p>Shortcodes are simple snippets inside your content files calling built-in or custom templates.&lt;/p>
+&lt;h3 id="examples">Examples&lt;/h3>
+&lt;blockquote class="twitter-tweet">&lt;p lang="en" dir="ltr">Owl bet you&amp;#39;ll lose this staring contest 🦉 &lt;a href="https://t.co/eJh4f2zncC">pic.twitter.com/eJh4f2zncC&lt;/a>&lt;/p>&amp;mdash; San Diego Zoo Wildlife Alliance (@sandiegozoo) &lt;a href="https://twitter.com/sandiegozoo/status/1453110110599868418?ref_src=twsrc%5Etfw">October 26, 2021&lt;/a>&lt;/blockquote>
+&lt;script async src="https://platform.twitter.com/widgets.js" charset="utf-8">&lt;/script>
+&lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
+&lt;iframe src="https://www.youtube.com/embed/qtIqKaDlqXo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
+&lt;/div>
+&lt;p>&lt;a href="https://alanphil2k01.github.io/intro_to_hugo/posts/01_what_is_hugo">Back&lt;/a>
+&lt;/p></description></item></channel></rss>
