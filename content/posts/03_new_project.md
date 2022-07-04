@@ -153,5 +153,6 @@ baseURL = 'https://<GITHUB_USERNAME>.github.io/<GITHUB_REPO_NAME>/'
 canonifyURLs = true
 ```
 4. Commit changes and push to the repository
+5. Goto repo settings -> pages. In sources expand drop down menu and select gh-pages and click save.
 
 [Prev](/posts/02_setup)

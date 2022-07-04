@@ -56,8 +56,8 @@ showTags = false             # /tags/
 # custom navigation items
 
 [[params.nav.custom]]
-title = "About"
-url = "/about"
+title = "Repo"
+url = "https://github.com/alanphil2k01/intro_to_hugo"
 
 [[params.nav.custom]]
 title = "Hugo"
