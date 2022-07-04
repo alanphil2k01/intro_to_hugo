@@ -156,6 +156,7 @@ publish_dir: ./public
 canonifyURLs = true
 &lt;/code>&lt;/pre>&lt;ol start="4">
 &lt;li>Commit changes and push to the repository&lt;/li>
+&lt;li>Goto repo settings -&amp;gt; pages. In sources expand drop down menu and select gh-pages and click save.&lt;/li>
 &lt;/ol>
 &lt;p>&lt;a href="https://alanphil2k01.github.io/intro_to_hugo/posts/02_setup">Prev&lt;/a>
 &lt;/p></description></item><item><title>Shortcodes</title><link>https://alanphil2k01.github.io/intro_to_hugo/extras/shortcodes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://alanphil2k01.github.io/intro_to_hugo/extras/shortcodes/</guid><description>&lt;p>Shortcodes are simple snippets inside your content files calling built-in or custom templates.&lt;/p>
