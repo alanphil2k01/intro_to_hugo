@@ -109,7 +109,7 @@ hugo server -D
 
 
 # Deploy
-[Hugo docs](https://gohugo.io/documentation/) have extensive instruction for deployment to various platforms.
+[Hugo docs](https://gohugo.io/hosting-and-deployment/) have extensive instruction for deployment to various platforms.
 #### Deploying to github
 1. Create a new repository
 2. Create a file .github/workflows/gh-pages.yml with content
@@ -155,4 +155,4 @@ canonifyURLs = true
 4. Commit changes and push to the repository
 5. Goto repo settings -> pages. In sources expand drop down menu and select gh-pages and click save.
 
-[Prev](/posts/02_setup)
+[Prev](/posts/02_setup) | [Next](/posts/04_whats_next)

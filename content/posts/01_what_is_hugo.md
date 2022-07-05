@@ -13,6 +13,6 @@ title: "01 Hugo"
 - Builtin server for local development
 - Easy to deploy
 - Great [documentation](https://gohugo.io/documentation/)
-- [Shortcodes](/extras/shortcodes)
+- [Shortcodes](https://gohugo.io/content-management/shortcodes/)
 
 [Next](/posts/02_setup)
