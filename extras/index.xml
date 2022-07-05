@@ -12,7 +12,7 @@ is a static site generator written in Go and claims to be fastest framework in t
 &lt;li>Easy to deploy&lt;/li>
 &lt;li>Great &lt;a href="https://gohugo.io/documentation/"target="_blank" rel="noopener noreferrer">documentation&lt;/a>
 &lt;/li>
-&lt;li>&lt;a href="https://alanphil2k01.github.io/intro_to_hugo/extras/shortcodes">Shortcodes&lt;/a>
+&lt;li>&lt;a href="https://gohugo.io/content-management/shortcodes/"target="_blank" rel="noopener noreferrer">Shortcodes&lt;/a>
 &lt;/li>
 &lt;/ul>
 &lt;p>&lt;a href="https://alanphil2k01.github.io/intro_to_hugo/posts/02_setup">Next&lt;/a>
@@ -115,7 +115,7 @@ gongan = &amp;#34;&amp;#34;
 &lt;pre tabindex="0">&lt;code>hugo server -D
 &lt;/code>&lt;/pre>&lt;p>&lt;strong>Note&lt;/strong> &amp;lsquo;-D&amp;rsquo; flag is used to force the rendering of draft posts. Remove or make draft = false for each header of post before deploying it.&lt;/p>
 &lt;h1 id="deploy">Deploy&lt;/h1>
-&lt;p>&lt;a href="https://gohugo.io/documentation/"target="_blank" rel="noopener noreferrer">Hugo docs&lt;/a>
+&lt;p>&lt;a href="https://gohugo.io/hosting-and-deployment/"target="_blank" rel="noopener noreferrer">Hugo docs&lt;/a>
 have extensive instruction for deployment to various platforms.&lt;/p>
 &lt;h4 id="deploying-to-github">Deploying to github&lt;/h4>
 &lt;ol>
@@ -159,6 +159,21 @@ canonifyURLs = true
 &lt;li>Goto repo settings -&amp;gt; pages. In sources expand drop down menu and select gh-pages and click save.&lt;/li>
 &lt;/ol>
 &lt;p>&lt;a href="https://alanphil2k01.github.io/intro_to_hugo/posts/02_setup">Prev&lt;/a>
+| &lt;a href="https://alanphil2k01.github.io/intro_to_hugo/posts/04_whats_next">Next&lt;/a>
+&lt;/p></description></item><item><title>04 What's next</title><link>https://alanphil2k01.github.io/intro_to_hugo/posts/04_whats_next/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://alanphil2k01.github.io/intro_to_hugo/posts/04_whats_next/</guid><description>&lt;p>This is just scratching the surface of what Hugo is capabale of. Some of the must try ones are:-&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=pCPCQgqC8RA&amp;amp;list=PLLAZ4kZ9dFpOnyRlyS-liKL5ReHDcj4G3&amp;amp;index=10"target="_blank" rel="noopener noreferrer">Taxonomies&lt;/a>
+- separate pages based on categories, tags etc.&lt;/li>
+&lt;li>&lt;a href="https://gohugo.io/content-management/shortcodes/"target="_blank" rel="noopener noreferrer">Shortcodes&lt;/a>
+- Shortcodes are simple snippets inside your content files calling built-in or custom templates.&lt;/li>
+&lt;li>&lt;a href="https://www.youtube.com/watch?v=gnJbPO-GFIw&amp;amp;list=PLLAZ4kZ9dFpOnyRlyS-liKL5ReHDcj4G3&amp;amp;index=11"target="_blank" rel="noopener noreferrer">Templates&lt;/a>
+- Hugo provides many templating options from the homepage to 404 not found page.&lt;/li>
+&lt;li>&lt;a href="https://gohugo.io/hugo-pipes/"target="_blank" rel="noopener noreferrer">Hugo pipes&lt;/a>
+- Hugo Pipes is Hugo’s asset processing set of functions. This can be used to get data from local files or remote servers.&lt;/li>
+&lt;/ul>
+&lt;p>Here&amp;rsquo;s a great &lt;a href="https://www.youtube.com/playlist?list=PLLAZ4kZ9dFpOnyRlyS-liKL5ReHDcj4G3"target="_blank" rel="noopener noreferrer">playlist&lt;/a>
+I used to learn Hugo.&lt;/p>
+&lt;p>&lt;a href="https://alanphil2k01.github.io/intro_to_hugo/posts/03_new_project">Prev&lt;/a>
 &lt;/p></description></item><item><title>Shortcodes</title><link>https://alanphil2k01.github.io/intro_to_hugo/extras/shortcodes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://alanphil2k01.github.io/intro_to_hugo/extras/shortcodes/</guid><description>&lt;p>Shortcodes are simple snippets inside your content files calling built-in or custom templates.&lt;/p>
 &lt;h3 id="examples">Examples&lt;/h3>
 &lt;blockquote class="twitter-tweet">&lt;p lang="en" dir="ltr">Owl bet you&amp;#39;ll lose this staring contest 🦉 &lt;a href="https://t.co/eJh4f2zncC">pic.twitter.com/eJh4f2zncC&lt;/a>&lt;/p>&amp;mdash; San Diego Zoo Wildlife Alliance (@sandiegozoo) &lt;a href="https://twitter.com/sandiegozoo/status/1453110110599868418?ref_src=twsrc%5Etfw">October 26, 2021&lt;/a>&lt;/blockquote>
