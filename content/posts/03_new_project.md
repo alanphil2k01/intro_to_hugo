@@ -155,4 +155,4 @@ canonifyURLs = true
 4. Commit changes and push to the repository
 5. Goto repo settings -> pages. In sources expand drop down menu and select gh-pages and click save.
 
-[Prev](/posts/02_setup) | [Next](/posts/04_whats_next)
+[Prev](/posts/02_setup) | [Next](/posts/04_templates)

@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title></title>
+</head>
+<body>
+    {{ partial "partial-header" . }}
+
+    {{- block "main" . -}}
+    {{- end -}}
+
+    {{ block "footer" . }}
+        {{ $myColor := .Params.myColor }}
+        {{ if not $myColor }}
+            {{ $myColor = "blue" }}
+        {{ else }}
+            {{ $myColor = .Params.myColor }}
+        {{ end }}
+        <h1 style = "color: {{ $myColor }}"> Footer from BaseOf </h1>
+    {{ end }}
+
+
+</body>
+</html>
