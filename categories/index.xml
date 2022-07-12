@@ -1,4 +1,4 @@
-<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Categories on Introduction to Hugo</title><link>https://alanphil2k01.github.io/intro_to_hugo/categories/</link><description>Recent content in Categories on Introduction to Hugo</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>©2019 Notepadium.</copyright><atom:link href="https://alanphil2k01.github.io/intro_to_hugo/categories/index.xml" rel="self" type="application/rss+xml"/><item><title>01 Hugo</title><link>https://alanphil2k01.github.io/intro_to_hugo/posts/01_what_is_hugo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://alanphil2k01.github.io/intro_to_hugo/posts/01_what_is_hugo/</guid><description>&lt;h1 id="hugo">Hugo&lt;/h1>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Categories on Introduction to Hugo</title><link>https://alanphil2k01.github.io/intro_to_hugo/categories/</link><description>Recent content in Categories on Introduction to Hugo</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>©2019 Notepadium.</copyright><atom:link href="https://alanphil2k01.github.io/intro_to_hugo/categories/index.xml" rel="self" type="application/rss+xml"/><item><title>B</title><link>https://alanphil2k01.github.io/intro_to_hugo/dir1/dir2/b/</link><pubDate>Tue, 12 Jul 2022 23:26:38 +0530</pubDate><guid>https://alanphil2k01.github.io/intro_to_hugo/dir1/dir2/b/</guid><description>&lt;p>This is b.md&lt;/p></description></item><item><title>A</title><link>https://alanphil2k01.github.io/intro_to_hugo/dir1/a/</link><pubDate>Tue, 12 Jul 2022 19:28:57 +0530</pubDate><guid>https://alanphil2k01.github.io/intro_to_hugo/dir1/a/</guid><description>&lt;p>This is from a.md&lt;/p></description></item><item><title>01 Hugo</title><link>https://alanphil2k01.github.io/intro_to_hugo/posts/01_what_is_hugo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://alanphil2k01.github.io/intro_to_hugo/posts/01_what_is_hugo/</guid><description>&lt;h1 id="hugo">Hugo&lt;/h1>
 &lt;p>&lt;a href="https://gohugo.io/"target="_blank" rel="noopener noreferrer">Hugo&lt;/a>
 is a static site generator written in Go and claims to be fastest framework in the world.&lt;/p>
 &lt;h3 id="features-of-hugo">Features of Hugo&lt;/h3>
@@ -159,8 +159,28 @@ canonifyURLs = true
 &lt;li>Goto repo settings -&amp;gt; pages. In sources expand drop down menu and select gh-pages and click save.&lt;/li>
 &lt;/ol>
 &lt;p>&lt;a href="https://alanphil2k01.github.io/intro_to_hugo/posts/02_setup">Prev&lt;/a>
-| &lt;a href="https://alanphil2k01.github.io/intro_to_hugo/posts/04_whats_next">Next&lt;/a>
-&lt;/p></description></item><item><title>04 What's next</title><link>https://alanphil2k01.github.io/intro_to_hugo/posts/04_whats_next/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://alanphil2k01.github.io/intro_to_hugo/posts/04_whats_next/</guid><description>&lt;p>This is just scratching the surface of what Hugo is capabale of. Some of the must try ones are:-&lt;/p>
+| &lt;a href="https://alanphil2k01.github.io/intro_to_hugo/posts/04_templates">Next&lt;/a>
+&lt;/p></description></item><item><title>04 Templates</title><link>https://alanphil2k01.github.io/intro_to_hugo/posts/04_templates/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://alanphil2k01.github.io/intro_to_hugo/posts/04_templates/</guid><description>&lt;h1 id="templates">Templates&lt;/h1>
+&lt;p>Some of the most used templates are:-&lt;/p>
+&lt;ul>
+&lt;li>&lt;a href="https://gohugo.io/templates/base/"target="_blank" rel="noopener noreferrer">Base Template&lt;/a>
+&lt;/li>
+&lt;li>&lt;a href="https://gohugo.io/templates/lists/"target="_blank" rel="noopener noreferrer">List Template&lt;/a>
+&lt;/li>
+&lt;li>&lt;a href="https://gohugo.io/templates/single-page-templates/"target="_blank" rel="noopener noreferrer">Single Template&lt;/a>
+&lt;/li>
+&lt;/ul>
+&lt;p>These templates are basic HTML files that has access to variables and contents from your post.
+These files are stored in ./layouts director.&lt;/p>
+&lt;p>Default templates can be placed in ./layouts/_default&lt;/p>
+&lt;p>For templates specific to a folder in ./contents say ./content/dir1, the corresponding templates should be in ./layouts/dir1&lt;/p>
+&lt;p>Base template is created as baseof.html. This contains outer shell of all other templates.&lt;/p>
+&lt;p>List template (list.html) is for the page that lists out pages (in a particular directory or all the pages of your site). &lt;a href="https://alanphil2k01.github.io/intro_to_hugo/">The homepage&lt;/a>
+is an example of a list page.&lt;/p>
+&lt;p>The primary view of content in Hugo is the single view. Hugo will render every Markdown file provided with a corresponding single template (single.html). This page is an example of single page.&lt;/p>
+&lt;p>&lt;a href="https://alanphil2k01.github.io/intro_to_hugo/posts/03_new_project">Prev&lt;/a>
+| &lt;a href="https://alanphil2k01.github.io/intro_to_hugo/posts/05_whats_next">Next&lt;/a>
+&lt;/p></description></item><item><title>05 What's next</title><link>https://alanphil2k01.github.io/intro_to_hugo/posts/05_whats_next/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://alanphil2k01.github.io/intro_to_hugo/posts/05_whats_next/</guid><description>&lt;p>There are a lot more to learn about Hugo. Here are some links:-&lt;/p>
 &lt;ul>
 &lt;li>&lt;a href="https://www.youtube.com/watch?v=pCPCQgqC8RA&amp;amp;list=PLLAZ4kZ9dFpOnyRlyS-liKL5ReHDcj4G3&amp;amp;index=10"target="_blank" rel="noopener noreferrer">Taxonomies&lt;/a>
 - separate pages based on categories, tags etc.&lt;/li>
@@ -173,7 +193,7 @@ canonifyURLs = true
 &lt;/ul>
 &lt;p>Here&amp;rsquo;s a great &lt;a href="https://www.youtube.com/playlist?list=PLLAZ4kZ9dFpOnyRlyS-liKL5ReHDcj4G3"target="_blank" rel="noopener noreferrer">playlist&lt;/a>
 I used to learn Hugo.&lt;/p>
-&lt;p>&lt;a href="https://alanphil2k01.github.io/intro_to_hugo/posts/03_new_project">Prev&lt;/a>
+&lt;p>&lt;a href="https://alanphil2k01.github.io/intro_to_hugo/posts/04_templates">Prev&lt;/a>
 &lt;/p></description></item><item><title>Shortcodes</title><link>https://alanphil2k01.github.io/intro_to_hugo/extras/shortcodes/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://alanphil2k01.github.io/intro_to_hugo/extras/shortcodes/</guid><description>&lt;p>Shortcodes are simple snippets inside your content files calling built-in or custom templates.&lt;/p>
 &lt;h3 id="examples">Examples&lt;/h3>
 &lt;blockquote class="twitter-tweet">&lt;p lang="en" dir="ltr">Owl bet you&amp;#39;ll lose this staring contest 🦉 &lt;a href="https://t.co/eJh4f2zncC">pic.twitter.com/eJh4f2zncC&lt;/a>&lt;/p>&amp;mdash; San Diego Zoo Wildlife Alliance (@sandiegozoo) &lt;a href="https://twitter.com/sandiegozoo/status/1453110110599868418?ref_src=twsrc%5Etfw">October 26, 2021&lt;/a>&lt;/blockquote>
