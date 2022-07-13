@@ -1,6 +1,13 @@
 <rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom"><channel><title>Introduction to Hugo</title><link>https://alanphil2k01.github.io/intro_to_hugo/dir1/dir2/</link><description>Recent content on Introduction to Hugo</description><generator>Hugo -- gohugo.io</generator><language>en-us</language><copyright>©2019 Notepadium.</copyright><lastBuildDate>Tue, 12 Jul 2022 23:26:38 +0530</lastBuildDate><atom:link href="https://alanphil2k01.github.io/intro_to_hugo/dir1/dir2/index.xml" rel="self" type="application/rss+xml"/><item><title>B</title><link>https://alanphil2k01.github.io/intro_to_hugo/dir1/dir2/b/</link><pubDate>Tue, 12 Jul 2022 23:26:38 +0530</pubDate><guid>https://alanphil2k01.github.io/intro_to_hugo/dir1/dir2/b/</guid><description>&lt;p>This is b.md&lt;/p></description></item><item><title>A</title><link>https://alanphil2k01.github.io/intro_to_hugo/dir1/a/</link><pubDate>Tue, 12 Jul 2022 19:28:57 +0530</pubDate><guid>https://alanphil2k01.github.io/intro_to_hugo/dir1/a/</guid><description>&lt;p>This is from a.md&lt;/p></description></item><item><title>01 Hugo</title><link>https://alanphil2k01.github.io/intro_to_hugo/posts/01_what_is_hugo/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://alanphil2k01.github.io/intro_to_hugo/posts/01_what_is_hugo/</guid><description>&lt;h1 id="hugo">Hugo&lt;/h1>
 &lt;p>&lt;a href="https://gohugo.io/"target="_blank" rel="noopener noreferrer">Hugo&lt;/a>
 is a static site generator written in Go and claims to be fastest framework in the world.&lt;/p>
+&lt;h3 id="why-use-hugo-over-alternatives-like-medium">Why use hugo over alternatives like medium&lt;/h3>
+&lt;ul>
+&lt;li>It&amp;rsquo;s easy to build&lt;/li>
+&lt;li>You have control to where to deploy&lt;/li>
+&lt;li>It&amp;rsquo;s free and secure&lt;/li>
+&lt;li>Highly customizable&lt;/li>
+&lt;/ul>
 &lt;h3 id="features-of-hugo">Features of Hugo&lt;/h3>
 &lt;ul>
 &lt;li>It&amp;rsquo;s fast&lt;/li>
