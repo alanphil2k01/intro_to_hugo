@@ -19,8 +19,6 @@ is a static site generator written in Go and claims to be fastest framework in t
 &lt;li>Easy to deploy&lt;/li>
 &lt;li>Great &lt;a href="https://gohugo.io/documentation/"target="_blank" rel="noopener noreferrer">documentation&lt;/a>
 &lt;/li>
-&lt;li>&lt;a href="https://gohugo.io/content-management/shortcodes/"target="_blank" rel="noopener noreferrer">Shortcodes&lt;/a>
-&lt;/li>
 &lt;/ul>
 &lt;p>&lt;a href="https://alanphil2k01.github.io/intro_to_hugo/posts/02_setup">Next&lt;/a>
 &lt;/p></description></item><item><title>02 Setup</title><link>https://alanphil2k01.github.io/intro_to_hugo/posts/02_setup/</link><pubDate>Mon, 01 Jan 0001 00:00:00 +0000</pubDate><guid>https://alanphil2k01.github.io/intro_to_hugo/posts/02_setup/</guid><description>&lt;h1 id="installation">Installation&lt;/h1>
@@ -192,7 +190,8 @@ is an example of a list page.&lt;/p>
 &lt;li>&lt;a href="https://www.youtube.com/watch?v=pCPCQgqC8RA&amp;amp;list=PLLAZ4kZ9dFpOnyRlyS-liKL5ReHDcj4G3&amp;amp;index=10"target="_blank" rel="noopener noreferrer">Taxonomies&lt;/a>
 - separate pages based on categories, tags etc.&lt;/li>
 &lt;li>&lt;a href="https://gohugo.io/content-management/shortcodes/"target="_blank" rel="noopener noreferrer">Shortcodes&lt;/a>
-- Shortcodes are simple snippets inside your content files calling built-in or custom templates.&lt;/li>
+- Shortcodes are simple snippets inside your content files calling built-in or custom templates. Here&amp;rsquo;s an &lt;a href="https://alanphil2k01.github.io/intro_to_hugo/extras/shortcodes">example&lt;/a>
+I did.&lt;/li>
 &lt;li>&lt;a href="https://www.youtube.com/watch?v=gnJbPO-GFIw&amp;amp;list=PLLAZ4kZ9dFpOnyRlyS-liKL5ReHDcj4G3&amp;amp;index=11"target="_blank" rel="noopener noreferrer">Templates&lt;/a>
 - Hugo provides many templating options from the homepage to 404 not found page.&lt;/li>
 &lt;li>&lt;a href="https://gohugo.io/hugo-pipes/"target="_blank" rel="noopener noreferrer">Hugo pipes&lt;/a>
@@ -208,5 +207,5 @@ I used to learn Hugo.&lt;/p>
 &lt;div style="position: relative; padding-bottom: 56.25%; height: 0; overflow: hidden;">
 &lt;iframe src="https://www.youtube.com/embed/qtIqKaDlqXo" style="position: absolute; top: 0; left: 0; width: 100%; height: 100%; border:0;" allowfullscreen title="YouTube Video">&lt;/iframe>
 &lt;/div>
-&lt;p>&lt;a href="https://alanphil2k01.github.io/intro_to_hugo/posts/01_what_is_hugo">Back&lt;/a>
+&lt;p>&lt;a href="https://alanphil2k01.github.io/intro_to_hugo/posts/05_whats_next">Back&lt;/a>
 &lt;/p></description></item></channel></rss>
