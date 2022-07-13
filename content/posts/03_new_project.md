@@ -158,6 +158,10 @@ canonifyURLs = true
 
     **NOTE:** push to the main branch as the github workflow script is configured as so. To push to main branch do
     ```
+    git checkout -b main
+    ```
+    then push to main
+    ```
     git push origin main
     ```
     or if it didn't work try with -f flag like so
@@ -165,6 +169,8 @@ canonifyURLs = true
     git push -f origin main
     ```
 
-5. Goto repo settings -> pages. In sources expand drop down menu and select gh-pages and click save.
+    if you want to use master branch change occurance of all 'main' to 'master' (ie lines 6 and 29 if you used the above gh-pages.yml).
+
+5. Go to repo settings -> pages. In sources expand drop down menu and select gh-pages and click save.
 
 [Prev](/posts/02_setup) | [Next](/posts/04_templates)
