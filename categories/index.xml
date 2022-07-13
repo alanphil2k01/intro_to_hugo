@@ -164,12 +164,15 @@ publish_dir: ./public
 &lt;li>
 &lt;p>Commit changes and push to the repository&lt;/p>
 &lt;p>&lt;strong>NOTE:&lt;/strong> push to the main branch as the github workflow script is configured as so. To push to main branch do&lt;/p>
+&lt;pre tabindex="0">&lt;code>git checkout -b main
+&lt;/code>&lt;/pre>&lt;p>then push to main&lt;/p>
 &lt;pre tabindex="0">&lt;code>git push origin main
 &lt;/code>&lt;/pre>&lt;p>or if it didn&amp;rsquo;t work try with -f flag like so&lt;/p>
 &lt;pre tabindex="0">&lt;code>git push -f origin main
-&lt;/code>&lt;/pre>&lt;/li>
+&lt;/code>&lt;/pre>&lt;p>if you want to use master branch change occurance of all &amp;lsquo;main&amp;rsquo; to &amp;lsquo;master&amp;rsquo; (ie lines 6 and 29 if you used the above gh-pages.yml).&lt;/p>
+&lt;/li>
 &lt;li>
-&lt;p>Goto repo settings -&amp;gt; pages. In sources expand drop down menu and select gh-pages and click save.&lt;/p>
+&lt;p>Go to repo settings -&amp;gt; pages. In sources expand drop down menu and select gh-pages and click save.&lt;/p>
 &lt;/li>
 &lt;/ol>
 &lt;p>&lt;a href="https://alanphil2k01.github.io/intro_to_hugo/posts/02_setup">Prev&lt;/a>
