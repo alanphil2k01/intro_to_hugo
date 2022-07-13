@@ -10,5 +10,4 @@ Shortcodes are simple snippets inside your content files calling built-in or cus
 
 {{< youtube qtIqKaDlqXo >}}
 
-[Back](/posts/01_what_is_hugo)
-
+[Back](/posts/05_whats_next)
