@@ -7,7 +7,7 @@ title: "01 Hugo"
 
 ### Why use hugo over alternatives like medium
 - It's easy to build
-- You have control to where to deploy
+- You have control on where to deploy
 - It's free and secure
 - Highly customizable
 

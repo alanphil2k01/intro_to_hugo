@@ -105,7 +105,9 @@ The file will be located in content/posts/<FILENAME>.md
 ```
 hugo server -D
 ```
-**Note** '-D' flag is used to force the rendering of draft posts. Remove or make draft = false for each header of post before deploying it.
+**Note:** '-D' flag is used to force the rendering of draft posts.
+
+Remove or make draft = false for each header of post before deploying it.
 
 
 # Deploy
@@ -148,11 +150,21 @@ jobs:
           publish_dir: ./public
 ```
 3. Add/Edit the following entries in config.toml
-```
+```toml
 baseURL = 'https://<GITHUB_USERNAME>.github.io/<GITHUB_REPO_NAME>/'
 canonifyURLs = true
 ```
 4. Commit changes and push to the repository
+
+    **NOTE:** push to the main branch as the github workflow script is configured as so. To push to main branch do
+    ```
+    git push origin main
+    ```
+    or if it didn't work try with -f flag like so
+    ```
+    git push -f origin main
+    ```
+
 5. Goto repo settings -> pages. In sources expand drop down menu and select gh-pages and click save.
 
 [Prev](/posts/02_setup) | [Next](/posts/04_templates)
